@@ -1,0 +1,116 @@
+AMAÇ
+     Projemizin amacı, alışılmışlığın dışına çıkılarak ingilizce kelime öğrenmeyi daha eğlenceli bir hale getirmektir. Bu uygulama ile kullanıcı programda yer alan sözlüğe bildiği ingilizce kelimeleri kaydedecek ardından isterse sözlüğe kaydettiği kelimeler ile kendini sınayabilecek ister de uygulamaya kayıt olmuş kullanıcılar arasından rakibini seçerek eşleşeceği ve iki rakibin birbirlerinin sözlüğündeki kelimeler ile yarışabileceği uygulama yapmaktır.
+
+KAPSAM
+     Projenin kapsamında rakiple yarışma yapılırken sorular bir kullanıcıya bir rakibe sorulacak şekilde ardışık cevaplanmayacaktır. İki tarafta soruları bütün olarak cevaplayacaklardır.
+
+HEDEF
+•	Projemizin öncelikli hedeflerinden bir tanesi kesintisiz çalışma olanağı sağlamasıdır.
+•	Eğlenerek öğrenmeyi sağlayabilmektir.
+•	Sözlüğe eklenen kelimelerin sorunsuz bir şekilde saklanabilmesidir.
+•	Kendini sına kategorisinde doğru bir şekilde test yapılabilmesidir.
+•	Online olan kullanıcıların görülebilmesidir.
+•	Online olan kullanıcılar arasından sorunsuz bir şekilde rakip eşleşmesi yapılabilmesidir.
+
+BAŞARI KRİTERLERİ
+•	Sözlüğe başarılı bir şekilde yeni kelimeler eklenebilmelidir.
+•	Online yarışma kategorisinde kullanıcılar rakipleri ile yarışırken sistem sorunu yaşanmamalıdır.
+•	
+GENEL BAKIŞ
+     Race Your Words uygulaması kayıtlı kelimeler ile kullanıcıyı sınayıp rakiplerin sözlüğündeki kelimeler ile yarışmayı sağlayarak öğreten bir mobil uygulamadır.
+
+
+
+
+
+SİSTEM DETAYLARI
+     Kullanıcı e-posta ve şifresi ile uygulamaya giriş yapar. Kayıtlı değilse üye olur veya misafir olarak da giriş yapabilir. Kullanıcı uygulamaya giriş yaptıktan sonra kategorisi sayfasına gelir. Buradan sözlük veya yarışma bölümlerinden birini seçebilir. Sözlük bölümünde yeni kelime ekleme işlemini gerçekleştirir. Yarışma bölümünü sadece üye olanlar kullanabilir. Burada rakibini seç sayfası açılır. Kullanıcı kullanıcı adı ile rakibini aratarak eşleşir ve iki kullanıcı birbirlerinin sözlüğü ile yarışmaya başlar.
+
+Fonksiyonel Olmayan Gereksinimler:
+
+➢	Kullanılabilirlik: 
+    Uygulama ara yüzü kullanılabilirlik açısından alışkanlıkları bozmayacak, anlaşılabilir ve sade bir şekilde hazırlanmıştır. Uygulama ingilizce kelime dağarcığını hem eğlenip hem öğrenerek geliştirmek isteyenler tarafından kullanılacaktır.
+
+➢	Güvenilirlik:
+    Uygulamaya e-posta ve şifre ile giriş sağlanıp kullanıcıların bilgileri saklı tutulmakta ve paylaşılmamaktadır.
+
+➢	Desteklenebilirlik:
+    Proje mobil android uygulaması olmaktadır. Cep telefonuna kurulması için başka bir uygulamaya gerek yoktur. 
+
+➢	Ara yüz:
+    Veri girişi cep telefonu klavyesi üzerinden sağlanacaktır.
+    Çıkış ekrandan alınacaktır.
+
+
+
+➢	Gizlilik Gereksinimi:
+    Uygulamayı indiren her kullanıcı üye olup giriş yapabilir ancak birbirlerinin verilerine erişemezler.
+
+SİSTEM MODELLERİ
+
+Aktörler
+KULLANICI	•	Sözlüğe yeni kelime ekler.
+•	Sözlükte yer alan kelimeler ile kendini sınar.
+•	Yarışma başlatır.
+•	Rakibi ile eşleşir.
+
+Olaylar
+➢	Üye olunur.
+➢	Sisteme giriş yapılır.
+➢	Üye olmadan misafir olarak da sisteme giriş yapılabilir.
+➢	Sözlük veya yarışma kategorilerinden biri seçilir.
+➢	Sözlük kategorisinde yeni kelime ekleme işlemi gerçekleştirilir.
+➢	Yarışma kategorisinde sına veya yarış seçeneklerinden biri seçilir.
+➢	Sına işlemi kullanıcının kendi sözlüğüne kaydettiği kelimeler ile test edilmesidir.
+➢	Yarış işleminde rakip seçilir ve birbirlerinin sözlüklerindeki kelimeler ile karşılıklı olarak yarış yapılır.
+
+
+
+
+
+
+
+
+
+
+
+
+Senaryo
+Senaryo adı	Sözlüğe kelime ekleme
+Senaryoya katılan varlık	Gözde: Kullanıcı
+Olay akışı	1.Gözde login olur.
+2.Gözde kategorilerden sözlüğü seçer.
+3.Gözde kelime ekle butonuna tıklar.
+4.Gözde kelimenin İngilizce ve Türkçe karşılığını girer.
+5.Gözde girdilerini kaydeder.
+
+Senaryo adı	Sözlükteki kelimelerle kendini sınama
+Senaryoya katılan varlık	Gözde: Kullanıcı
+Olay akışı	1.Gözde login olur.
+2.Gözde kategorilerden yarışmayı seçer.
+3.Gözde seçeneklerden sınayı seçer.
+
+
+Senaryo adı	Rakiple yarışma 
+Senaryoya katılan varlık	Gözde: Kullanıcı
+Olay akışı	1.Gözde login olur.
+2.Gözde kategorilerden yarışmayı seçer.
+3.Gözde seçeneklerden yarışa tıklar.
+4.Gözde rakibini bulur ve eşleşir.
+5.Gözde rakibi ile yarışmayı başlatır.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
